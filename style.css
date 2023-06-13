@@ -1,5 +1,42 @@
-h1{
-    color: blue;
-    text-align: center;
-    
+header{
+    background-color: rgb(144, 147, 146);
+    width: 80%;
+    height: 200px;
+    margin: auto;
+}
+
+nav {
+    margin: auto;
+    background-color: #a58080;
+    color: #fff; 
+    margin: auto;
+}
+  
+ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+li {
+  flex-grow: 1; 
+  background-color: rgb(159, 117, 210); 
+}
+
+#liHeader1{
+  text-align: center;
+  background-color: rgb(177, 206, 175); 
+  flex-grow: 3;
+}
+  
+
+  
+a {
+    color: #fff;
+    text-decoration: none;
+}
+  
+a:hover {
+    text-decoration: underline;
 }
