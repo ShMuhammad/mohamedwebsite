@@ -1,31 +1,49 @@
 header{
     background-color: rgb(144, 147, 146);
-    width: 80%;
+    width: 95%;
     height: 200px;
     margin: auto;
 }
 
 nav {
+    width: 100%;
+    padding: 20px 0;
     margin: auto;
     background-color: #a58080;
     color: #fff; 
-    margin: auto;
+    
 }
   
 ul {
+    padding: 0;
+    width: 100%;
+    background-color: blanchedalmond;
     list-style-type: none;
-    display: flex;
+    display: inline-flex;
+    gap: 10px;
     align-items: center;
-    justify-content: center;
 }
 
 li {
+  padding: 30px 10px;
   flex-grow: 1; 
-  background-color: rgb(159, 117, 210); 
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+
+}
+
+img{
+    height:  76px;
+    width: 78px;
+}
+
+p{
+    color: black;
+    margin: 0;
+    padding: 0;
 }
 
 #liHeader1{
-  text-align: center;
   background-color: rgb(177, 206, 175); 
   flex-grow: 3;
 }
@@ -38,5 +56,8 @@ a {
 }
   
 a:hover {
-    text-decoration: underline;
+    
+    border-bottom: 2px solid #ec6713;
+    
+
 }
