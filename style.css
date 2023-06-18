@@ -1,5 +1,4 @@
 header{
-    background-color: rgb(144, 147, 146);
     width: 95%;
     height: 200px;
     margin: auto;
@@ -9,15 +8,13 @@ nav {
     width: 100%;
     padding: 20px 0;
     margin: auto;
-    background-color: #a58080;
-    color: #fff; 
+    color: #000000; 
     
 }
   
 ul {
     padding: 0;
     width: 100%;
-    background-color: blanchedalmond;
     list-style-type: none;
     display: inline-flex;
     gap: 10px;
@@ -25,16 +22,15 @@ ul {
 }
 
 li {
-  padding: 30px 10px;
+  padding: 20px 1px;
   flex-grow: 1; 
   text-align: center;
-  background-color: rgb(255, 255, 255);
-
 }
 
 img{
     height:  76px;
     width: 78px;
+    padding-bottom: 8px;
 }
 
 p{
@@ -44,8 +40,7 @@ p{
 }
 
 #liHeader1{
-  background-color: rgb(177, 206, 175); 
-  flex-grow: 3;
+  flex-grow: 4;
 }
   
 
@@ -54,10 +49,25 @@ a {
     color: #fff;
     text-decoration: none;
 }
-  
-a:hover {
+
+hr{
+    background: red;
+    width: 18%;
+    position: relative;
+    top: 2px;
+    border: none;
+    height: 3px; 
+    visibility: hidden;  
+}
+
+#opened{
+    background: rgb(9, 171, 0);
+    visibility: visible;
+}
+
+a:hover hr {
+    visibility: visible;
     
-    border-bottom: 2px solid #ec6713;
     
 
 }
