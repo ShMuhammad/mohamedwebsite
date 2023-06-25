@@ -13,8 +13,9 @@
   
 
 body{
-    background-image: linear-gradient(to bottom, #C6FFDD, #f9e1aa, #dad7bd);
+    background: linear-gradient(to bottom, #b9fed4, #f9e1aa, #dad7bd, #e9d3ef);  
 }
+
 
 header{
     width: 90%;
@@ -35,6 +36,17 @@ nav {
     border-bottom: 1px solid gray;
 }
 
+#homePageNav{
+    animation-name: navBarMove;
+    animation-duration: 2s;
+}
+
+@keyframes navBarMove {
+    0% {transform: translateY(-100%); opacity: 0.10; width: 100%;}
+    50% {transform: translateY(30%); opacity: 0.50;}
+    100% {transform: translateY(0%);}
+}
+
 nav h1{
     font-family: Acorn;
     text-transform: capitalize;
@@ -42,7 +54,6 @@ nav h1{
     letter-spacing: 0;
     text-align: center;
     color: rgb(64, 100, 88);    
- 
 }
   
 ul {
