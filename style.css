@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Raleway:wght@700;800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald&family=Raleway:wght@700;800&display=swap');
 @font-face {
     font-family: 'Acorn';
     src: local('Acorn Bold'), local('Acorn-Bold'),
@@ -7,9 +7,11 @@
         url(fonts/Acorn-Bold.woff) format('woff'),
         url(fonts/Acorn-Bold.ttf) format('truetype');
     font-weight: 1000;
-    font-style: normal;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Raleway', sans-serif;
   }
-
   
 
 body{
@@ -29,8 +31,8 @@ header{
 }
 
 nav {
-    width: 64%;
-    padding: 10px 0;
+    width: 60%;
+    padding: 8px 0;
     margin: auto;
     color: #000000;  
     border-bottom: 1px solid gray;
@@ -42,8 +44,8 @@ nav {
 }
 
 @keyframes navBarMove {
-    0% {transform: translateY(-100%); opacity: 0.10; width: 100%;}
-    50% {transform: translateY(30%); opacity: 0.50;}
+    0% {transform: translateY(-100%); opacity: 0.10;}
+    50% {transform: translateY(50%); opacity: 0.50;}
     100% {transform: translateY(0%);}
 }
 
@@ -53,7 +55,23 @@ nav h1{
     font-size: 50pt;
     letter-spacing: 0;
     text-align: center;
-    color: rgb(64, 100, 88);    
+    color: rgb(64, 100, 88);
+    animation: shake 1.5s infinite;    
+}
+
+.hi{
+    display: inline-block;
+    animation-name: shake;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-iteration-count: 2;
+}
+@keyframes shake{
+    0% { transform: translate(1px, 1px) rotate(0deg); color: rgb(250, 32, 32);}
+    20% { transform: translate(-1px, 0px) rotate(10deg); color: rgb(179, 5, 124);}
+    40% { transform: translate(1px, -1px) rotate(-10deg); color: rgb(250, 110, 45);}
+    80% { transform: translate(-1px, -1px) rotate(8deg);color: rgb(47, 64, 245);}
+    100% { transform: translate(0px, -0px) rotate(-9deg); color: rgb(12, 244, 16);} 
 }
   
 ul {
@@ -73,8 +91,8 @@ li {
 }
 
 img{
-    height:  56px;
-    width: 56px;
+    height:  54px;
+    width: 54px;
     padding-bottom: 8px;
 }
 
@@ -130,11 +148,9 @@ main{
 
 .h1Div{
     width: 70%;
-
-    margin: auto;
-
-
+    margin: auto
 }
+
 .h1Div h1{
     font-family: Acorn;
     text-transform: capitalize;
@@ -154,6 +170,35 @@ main p{
     text-transform: capitalize;
 }
 
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: #2F86A6;
+    padding-bottom: 10px;
+  } 
+
+.skill-row {
+    width: 50%;
+    margin: 100px auto;
+    text-align: left;
+  }
+  
+  #myImg{
+    width: 140px;
+    height: 160px
+  }
+  
+  .coding_img {
+    width: 25%;
+    margin-right: 30px;
+    float: left;
+  }
+  
+  .window_img{
+    width: 25%;
+    margin-left: 30px;
+    float: right;
+  }
 
 footer{
     width: 100%;
@@ -161,4 +206,9 @@ footer{
     text-align: center;
     line-height: 50px;
     border-top: 1px solid gray;
+}
+
+footer ul{
+    list-style-image: url("imgs/github.png");
+    color: aqua;
 }
