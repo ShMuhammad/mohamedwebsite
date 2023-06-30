@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  font-family: 'Press Start 2P', cursive;
+  background-color: #ffffff;
+}
+
+main{
+  width: 60%;
+  margin: auto;
+}
+
+#result{
+  width: 75%;
+  display: flex;
+  margin: 0px auto 10px auto;
+  background-color: #20262E;
+}
+
+.resultText{
+  flex-grow: 2;
+  text-align: center;
+  margin: auto;
+  color: #FCFFE7;
+}
+.playerX {
+  padding: 6px;
+  background-color: #408E91;
+  text-align: center;
+  flex-grow: 1
+}
+
+#result img{
+  width: 44px;
+  height: 44px;
+  margin: 5px 0 5px 0;
+}
+
+#result p{
+  margin: 16px auto 0 auto;
+  font-size: 38pt;
+  font-weight: bolder;
+  color: #FCFFE7;
+}
+
+.buttonDiv{
+  width: 75%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+input[type="button"]{
+  background-color: #D8D8D8;
+  border: 5px solid rgba(252, 252, 252, 0.8);
+  padding: 42px;
+  font-size: 30px;
+  text-align: center;
+}
+
+input[type="button"]:nth-child(-1n+9) {
+  border-left: none;
+  border-top: none;
+}
+
+input[type="button"]:nth-child(-3n+9) {
+  border-right: none;
+  border-top: none;
+}
+input[type="button"]:nth-child(-3n+9) {
+  border-right: none;
+  border-top: none;
+}
+input[type="button"]:nth-last-child(-n + 3){
+  border-bottom: none;
+}
+
+.xChoice{
+  background-image: url(images/delete-cross.png);
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+
+.oChoice{
+  background-image: url(images/o.png);
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+
+.twoBtns{
+  width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  
+}
+button{
+  display:inline-block;
+  padding: 16px 30px;
+  margin: 10px 0;
+  border: 0.16em solid rgba(255,255,255,0);
+  box-sizing: border-box;
+  color: #ffffff;
+  text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+  text-align:center;
+  transition: all 0.2s;
+  background-color:#9a4ef1;
+  font-size: 9pt;
+  font-family: 'Press Start 2P', cursive;
+}
+
+button:nth-child(2) {
+  background-color:#f1bb4e;
+}
+
+button:hover{
+  text-shadow: 0 0 2em rgba(255,255,255,1);
+  color:#242424;
+  border-color:#2c2c2c;
+  }

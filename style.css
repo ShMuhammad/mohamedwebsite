@@ -38,8 +38,8 @@ body{
 }
 
 #floating-menu img{
-    width: 24px;
-    height: 24px;
+    width: 18px;
+    height: 18px;
     padding: 0;
 }
 
@@ -47,7 +47,7 @@ body{
     width: 24%;
     height: 26px;
     position: fixed;
-    top: 40px;
+    top: 35px;
     right: 0;
     background-color: #000000;
     background-image: url("https://www.codewars.com/users/MohammedChaouni/badges/small");
@@ -237,6 +237,36 @@ h3 {
     height: 140px;
     margin: 30px;
     float: right;
+}
+
+
+/*------------------Game Page-------------------------*/
+#gameMain{
+    margin: 20px auto;
+    display: flex;
+}
+
+#ticTacGame{
+    margin: auto;
+    width: 40%;
+    height: 400px;
+    background-color: #11999E;
+    border-radius: 25px;
+    background-image: url(imgs/tic-tac-toe.png);
+    background-position: center;
+    background-repeat: no-repeat;
+  
+}
+a:hover{
+    opacity: 0.5;
+}
+
+#game2{
+    margin: auto;
+    width: 40%;
+    height: 400px;
+    background-color: #459e11;
+    border-radius: 25px;
 }
 
 footer{
