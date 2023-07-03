@@ -247,13 +247,22 @@ h3 {
     display: flex;
 }
 
-#ticTacGame{
+section{
     margin: auto;
     width: 35%;
     height: 400px;
-    background-color: #fcfcfc;
+    background-color: #9681EB;
     border-radius: 25px;
-    
+}
+
+
+
+section:hover {
+    opacity: 0.8;
+}
+
+section h3{
+    color: #A7EDE7;
 }
 
 #gameImage{
@@ -263,22 +272,10 @@ h3 {
     margin: 20px;
     border-top-left-radius: 25px;
     border-top-right-radius: 22px;
-    background-color: #8cbd6f ;
+    background-color: #A7EDE7 ;
     background-image: url(imgs/tic-tac-toe.png);
     background-position: center;
     background-repeat: no-repeat;
-}
-
-section:hover {
-    opacity: 0.8;
-  }
-
-#game2{
-    margin: auto;
-    width: 35%;
-    height: 400px;
-    background-color: #459e11;
-    border-radius: 25px;
 }
 
 footer{
