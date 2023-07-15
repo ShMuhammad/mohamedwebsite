@@ -166,7 +166,8 @@ main{
 
 .h1Div{
     width: 70%;
-    margin: auto
+    margin: auto;
+    display: block;
 }
 
 .h1Div h1{
@@ -243,8 +244,8 @@ h3 {
 /*------------------Game Page-------------------------*/
 #gameMain{
     width: 80%;
-    margin: 20px auto 40px;
-    display: flex;
+    margin: 0px auto 40px;
+  
 }
 
 .gameSection{
@@ -310,4 +311,57 @@ footer{
     padding: 2px 16px;
     background-color: #fff;
     height: 200px;
+  }
+
+/*------------------About me Page-------------------------*/
+#container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+#myPic{
+   width: 260px;
+   height: 320px;
+    margin: 20px;
+   border-top-left-radius: 180px;
+   border-top-right-radius: 180px;
+  
+  }
+
+  #aboutMeP{
+    margin-left: 40px;
+    text-align: left;
+  }
+
+  #middleSection{
+    margin: 60px auto;
+    width: 80%;
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+  }
+ 
+  #middleSection div{
+    width: 60%;
+  }
+
+
+  #middleSection p, h2{
+    text-transform: uppercase;;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin: 20px;
+  }
+
+  #middleSection img{
+    width: 128px;
+    height: 128px;
   }
