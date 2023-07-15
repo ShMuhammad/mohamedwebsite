@@ -85,7 +85,7 @@ nav {
 .hi{
     display: inline-block;
     animation-name: shake;
-    animation-duration: 3s;
+    animation-duration: 5s;
     animation-delay: 1s;
     animation-iteration-count: 2;
 }
@@ -207,38 +207,37 @@ h2{
     padding: 50px 0 0 0;  
 }
 
-
-h3 {
-    font-family: 'Montserrat', sans-serif;
-    color: #11999E;
+.skill-row{
+    width: 80%;
+    margin: 80px auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.skill-row {
-    width: 60%;
-    margin: 80px auto;
+
+.skill-row h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #11999E;
     text-align: left;
+    flex-basis: 60%;
 }
 
 .skill-row p{
-    width: 100%;
-    text-align: left;
+    text-align: justify;
+    flex-basis: 60%;
+    padding: 0;
+    
 }
   
-.coding_img {
+.homeImages {
     display: block;
-    width: 25%;
-    height: 140px;
-    margin: 30px;
-    float: left;
+    width: 220px;
+    height: 220px;
+    padding: 50px;
+   
 }
+
   
-.window_img{
-    display: block;
-    width: 25%;
-    height: 140px;
-    margin: 30px;
-    float: right;
-}
 
 
 /*------------------Game Page-------------------------*/
