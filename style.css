@@ -18,15 +18,13 @@ body{
     padding: 0;
     margin: 0;
     background: linear-gradient(to bottom, #b9fed4, #E3FFF3,  #f0e0cb, #D9C1A7);  
-    color: #fff;
     text-align: center;
 }
 
-
 #floating-menu{
     position: fixed;
-    top: 0px;
-    right: 0px;
+    top: 2px;
+    right: 6px;
     width: fit-content;
     height: fit-content;
     padding: 5px 8px;
@@ -38,8 +36,8 @@ body{
 }
 
 #floating-menu img{
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
     padding: 0;
 }
 
@@ -172,7 +170,7 @@ main{
 
 .h1Div h1{
     margin: 0 0 40px 0;
-    font-family: Acorn;
+    font-family: Acorn, sans-serif;
     text-transform: capitalize;
     font-size: 70pt;
     letter-spacing: 0;
@@ -200,167 +198,262 @@ main hr{
 }
 
 h2{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.5rem;
-    color: #2F86A6;
+    font-family: Acorn, sans-serif;
+    font-size: 28pt;
+    color: rgb(35, 56, 49);
     font-weight: bold;
-    padding: 50px 0 0 0;  
+    padding: 50px 0 0 0; 
+    width: 70%; 
+    margin: auto;
 }
 
 .skill-row{
-    width: 80%;
+    width: 70%;
     margin: 80px auto;
-    display: flex;
-    flex-wrap: wrap;
+    display:flex; 
 }
 
-
 .skill-row h3 {
-    font-family: 'Montserrat', sans-serif;
-    color: #11999E;
+    font-family: Acorn, sans-serif;
+    font-size: 26pt;
+    color: rgb(33, 72, 71);
     text-align: left;
     flex-basis: 60%;
+    flex-shrink: 1;
+    font-size: 16pt;
+    text-transform: capitalize;
+    padding: 0 5px;
 }
 
 .skill-row p{
     text-align: justify;
-    flex-basis: 60%;
-    padding: 0;
-    
+    width: 100%;
+    padding: 0 5px;
+    margin: 0;  
+    font-size: 13pt;
+    text-transform: none;
+    font-family: Arial, Helvetica, sans-serif;
 }
   
 .homeImages {
-    display: block;
-    width: 220px;
-    height: 220px;
-    padding: 50px;
-   
+    width: 120px;
+    height: 120px;
+    padding: 90px 50px 10px 0;  
 }
 
+.imgFloat{
+    order: 2;
+    padding: 90px 0 10px 50px; 
+}
   
 
 
 /*------------------Game Page-------------------------*/
+#leftImg{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 140px;
+    left: 30%;
+}
+    
+
+#rightImg{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    top: 270px;
+    right: 31%;
+}
+
+#gameP{
+    padding: 50px 0;
+}
+
 #gameMain{
     width: 80%;
     margin: 0px auto 40px;
-  
 }
 
 .gameSection{
     margin: auto;
-    width: 35%;
+    width: 40%;
     height: 400px;
-    background-color: #9681EB;
+    padding: 5px;
+    background-color: #000000;
     border-radius: 25px;
 }
 
+.gameSection img{
+    display: block;
+    margin: 30px auto 40px auto;
+    width: 256px;
+    height: 256px;
 
-
-.gameSection:hover {
-    opacity: 0.8;
 }
 
-.gameSection h3{
-    color: #A7EDE7;
-}
-
-#gameImage{
-    margin: auto;
-    width: 90%;
-    height: 300px;
-    margin: 20px;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 22px;
-    background-color: #A7EDE7 ;
-    background-image: url(imgs/tic-tac-toe.png);
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-footer{
-    width: 100%;
-    margin: 0;
-    padding: 14px 0px 14px 0;
-    font-size: 18pt;
-    letter-spacing: 4px;
-    text-align: center;
-    border-top: 1px solid gray;
+.gameSection a {
+    margin: 5px auto;
+    background: #f48540;
+    border-radius: 999px;
+    box-shadow: #f48540 10px 10px 10px -10px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 14px 50px;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
 }
 
 /*------------------Learnt Page-------------------------*/
+.learingImg{
+    margin: auto;
+    width: 80%;
+    display: flex;
+}
+
+.learingImg img{
+   width: 28%;
+   height: 320px;
+}
+
+.learingImg p{
+   text-align: justify;
+   text-transform: none;
+   padding: 5px 30px;
+ }
+
+
+
+.learntCards{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin: 40px 0;
+}
+
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    width: 30%;
+    width: 25%;
     height: fit-content;
-  }
+}
 
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
+.card:hover {
+    box-shadow: 0 10px 18px 0 rgba(0,0,0,0.2);
+}
   
-  .card img {
-    margin: 10px;
+.card img {
+    padding: 20px;
     width: 120px;
     height: 120px;
-  }
+}
   
-  .container {
+.container {
     padding: 2px 16px;
-    background-color: #fff;
-    height: 200px;
+    height: 300px;
+}
+
+.container ol {
+    margin-top: 25px;
+    list-style: none;
+    counter-reset: item;
   }
+  .container li {
+    counter-increment: item;
+    margin-bottom: 6px;
+    text-align: left;
+    font-size: 13pt;
+   
+    color: rgb(2, 80, 106);
+  }
+  .container li:before {
+    margin-right: 12px;
+    content: counter(item);
+    background: rgb(3, 119, 157);
+    border-radius: 100%;
+    color: white;
+    width: 1.2em;
+    text-align: center;
+    display: inline-block;
+  }
+ 
 
 /*------------------About me Page-------------------------*/
 #container {
     width: 80%;
     margin: auto;
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgb(35, 56, 49);
+    border-radius: 60px;
   }
 
 
 #myPic{
    width: 260px;
    height: 320px;
-    margin: 20px;
+   margin: 20px;
    border-top-left-radius: 180px;
    border-top-right-radius: 180px;
   
   }
 
   #aboutMeP{
-    margin-left: 40px;
-    text-align: left;
+    margin-left: 45px;
+    text-align: justify;
+    color: #E3FFF3;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: none;
+    letter-spacing: normal;
+    padding: 0 12px 0 0;
   }
 
   #middleSection{
     margin: 60px auto;
     width: 80%;
-    background-color: black;
+    background-color: rgb(35, 56, 49);
     padding: 20px;
     display: flex;
     justify-content: center;
-    gap: 120px;
+    border-radius: 60px;
   }
  
-  #middleSection div{
-    width: 60%;
+#goalText{
+    width: 55%;
+    margin: auto;
   }
 
 
-  #middleSection p, h2{
+#goalText > *{
     text-transform: uppercase;;
     color: #fff;
     margin: 0;
-    padding: 0;
+    padding: 12px 0;
     width: 100%;
-    margin: 20px;
   }
 
   #middleSection img{
     width: 128px;
     height: 128px;
+    margin: auto;
   }
+
+  footer{
+    width: 100%;
+    margin: 0;
+    padding: 20px 0px 20px 0;
+    font-size: 18pt;
+    letter-spacing: 4px;
+    text-align: center;
+    border-top: 1px solid gray;
+}
